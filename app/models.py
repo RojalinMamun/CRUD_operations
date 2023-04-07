@@ -1,6 +1,8 @@
 from django.db import models
+from app.models import *
 
 # Create your models here.
+from django.db.models.functions import Length
 
 class Topic(models.Model):
     topic_name=models.CharField(max_length=100,primary_key=True)
